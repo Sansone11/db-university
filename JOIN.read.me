@@ -37,6 +37,10 @@ ORDER BY `students`.`surname` AND `students`.`name` ASC;
 
 5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
 
+SELECT * FROM `degrees` 
+JOIN `courses` ON `courses`.`id`= `degrees`.`id` 
+JOIN `teachers` ON `courses`.`id`=`teachers`.`id`;
+
 
 
 
